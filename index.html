@@ -1,0 +1,266 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Joan Cuevas | Cybersecurity Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #e2e8f0;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #111c30;
+            padding: 20px 10%;
+            border-bottom: 1px solid #26364d;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+            margin-left: 18px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            padding: 90px 10%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 0 auto 25px;
+            color: #a8b5c9;
+        }
+
+        .button {
+            display: inline-block;
+            background: #0284c7;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 55px 10%;
+        }
+
+        section h2 {
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(240px, 1fr)
+            );
+            gap: 20px;
+        }
+
+        .card {
+            background: #111c30;
+            border: 1px solid #26364d;
+            border-radius: 10px;
+            padding: 22px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #a8b5c9;
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            color: #38bdf8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            border-top: 1px solid #26364d;
+            color: #a8b5c9;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h2>Joan Cuevas</h2>
+
+            <div>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Cybersecurity <span>Portfolio</span></h1>
+
+            <p>
+                Profesional en formación en ciberseguridad,
+                con interés en Security Operations Center (SOC),
+                Digital Forensics and Incident Response (DFIR)
+                y Threat Hunting.
+            </p>
+
+            <a
+                class="button"
+                href="#proyectos"
+            >
+                Explorar mis proyectos
+            </a>
+        </section>
+
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+
+            <p>
+                Mi enfoque está orientado a la detección y análisis
+                de amenazas, la investigación de incidentes de
+                seguridad y el análisis forense digital.
+
+                Utilizo laboratorios prácticos para desarrollar
+                mis habilidades y documentar investigaciones
+                técnicas.
+            </p>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos y laboratorios</h2>
+
+            <div class="projects">
+
+                <article class="card">
+                    <h3>Laboratorio SOC con Wazuh</h3>
+
+                    <p>
+                        Implementación de un entorno de monitoreo
+                        para analizar eventos de seguridad,
+                        investigar alertas y detectar actividades
+                        sospechosas.
+                    </p>
+
+                    <a href="https://github.com/joanc001">
+                        Ver repositorios
+                    </a>
+                </article>
+
+                <article class="card">
+                    <h3>Análisis forense digital</h3>
+
+                    <p>
+                        Investigación de evidencias digitales
+                        utilizando herramientas de adquisición,
+                        análisis de memoria y análisis de artefactos
+                        del sistema.
+                    </p>
+
+                    <a href="https://github.com/joanc001">
+                        Ver repositorios
+                    </a>
+                </article>
+
+                <article class="card">
+                    <h3>Threat Hunting</h3>
+
+                    <p>
+                        Creación de consultas de búsqueda,
+                        análisis de eventos de Windows e
+                        investigación de comportamientos
+                        potencialmente maliciosos.
+                    </p>
+
+                    <a href="https://github.com/joanc001">
+                        Ver repositorios
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <p>
+                Puedes conocer más sobre mis proyectos
+                y laboratorios en mis repositorios.
+            </p>
+
+            <p>
+                GitHub:
+                <a href="https://github.com/joanc001">
+                    github.com/joanc001
+                </a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            © 2026 Joan Cuevas | Cybersecurity Portfolio
+        </p>
+    </footer>
+
+</body>
+</html>
+```
